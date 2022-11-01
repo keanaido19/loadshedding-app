@@ -1,9 +1,9 @@
 package wethinkcode.schedule.transfer;
 
-import java.time.LocalTime;
-
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.time.LocalTime;
 
 /**
  * TODO: javadoc SlotDO

@@ -1,11 +1,9 @@
 package wethinkcode.schedule.transfer;
 
-import wethinkcode.schedule.transfer.SlotDO;
-
-import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.util.List;
 
 /**
  * TODO: javadoc DayDO

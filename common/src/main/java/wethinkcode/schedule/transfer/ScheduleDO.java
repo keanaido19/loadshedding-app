@@ -1,10 +1,10 @@
 package wethinkcode.schedule.transfer;
 
-import java.time.LocalDate;
-import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.time.LocalDate;
+import java.util.List;
 
 // The following nested classes are the "domain model" for this service.
 
