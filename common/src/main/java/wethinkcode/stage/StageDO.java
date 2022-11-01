@@ -15,7 +15,7 @@ public class StageDO
         stage = 0;
     }
 
-    public StageDO( int s ){
+    public StageDO(int s ){
         stage = s;
     }
 
