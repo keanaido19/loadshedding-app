@@ -77,6 +77,7 @@ public class StageService
     }
 
     private void getLoadSheddingStage(Context context) {
+        context.header("Access-Control-Allow-Origin", "*");
         context.json(new StageDO(loadSheddingStage));
     }
 

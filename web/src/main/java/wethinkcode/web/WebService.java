@@ -2,6 +2,7 @@ package wethinkcode.web;
 
 import com.google.common.annotations.VisibleForTesting;
 import io.javalin.Javalin;
+import io.javalin.http.staticfiles.Location;
 
 /**
  * I am the front-end web server for the LightSched project.
@@ -13,7 +14,7 @@ import io.javalin.Javalin;
 public class WebService
 {
 
-    public static final int DEFAULT_PORT = 80;
+    public static final int DEFAULT_PORT = 5000;
 
     public static void main( String[] args ){
         final WebService svc = new WebService().initialise();
@@ -26,7 +27,7 @@ public class WebService
 
     @VisibleForTesting
     WebService initialise(){
-        // TODO: add http client and server configuration here
+        server = configureHttpServer();
         return this;
     }
 
@@ -53,6 +54,7 @@ public class WebService
     }
 
     private Javalin configureHttpServer(){
-        throw new UnsupportedOperationException( "TODO" );
+        return Javalin.create(config ->
+                config.addStaticFiles("/templates", Location.CLASSPATH));
     }
 }

@@ -107,12 +107,13 @@ public class ScheduleService
                 )
                 .get();
 
+        context.header("Access-Control-Allow-Origin","*");
+
         if (!checkIfPlaceIsValid(province, place)) {
             context.status(HttpStatus.NOT_FOUND);
             context.json(emptySchedule());
             return;
         }
-
         context.json(mockSchedule());
     }
 

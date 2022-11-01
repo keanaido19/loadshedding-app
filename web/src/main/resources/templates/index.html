@@ -1,14 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
-        <title>LightInTheSched</title>
+        <title>LightInTheShed</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>
-            <h1>Loadshedding Stage</h1>
-            <p></p>
+        <div id="app">
+            <h1>Loading...</h1>
         </div>
+
+        <script id="loading-template" type="text/handlebars-template">
+            <h1>Loading...</h1>
+        </script>
+
+        <script id="home-template" type="text/handlebars-template">
+            <h1>{{stage}}</h1>
+            <br/>
+            <ol style="list-style-type:none">
+                <li><h3><a href="/#towns?province=Eastern Cape">Easten Cape</a></h3></li>
+                <li><h3><a href="/#towns?province=Free State">Free State</a></h3></li>
+                <li><h3><a href="/#towns?province=Gauteng">Gauteng</a></h3></li>
+                <li><h3><a href="/#towns?province=KwaZulu-Natal">KwaZulu-Natal</a></h3></li>
+                <li><h3><a href="/#towns?province=Limpopo">Limpopo</a></h3></li>
+                <li><h3><a href="/#towns?province=Mpumalanga">Mpumalanga</a></h3></li>
+                <li><h3><a href="/#towns?province=North West">North West</a></h3></li>
+                <li><h3><a href="/#towns?province=Northern Cape">Northern Cape</a></h3></li>
+                <li><h3><a href="/#towns?province=Western Cape">Western Cape</a></h3></li>
+            </ol>
+        </script>
+
+        <script id="towns-template" type="text/handlebars">
+            {{#if towns}}
+                <h1>{{province}}</h1>
+                <br/>
+                <h2>Towns:</h2>
+                <ol style="list-style-type:none">
+                    {{#each towns}}
+                        <li>
+                            <h3>
+                                <a href="/#schedule?province={{province}}?town={{this.name}}">{{this.name}}</a>
+                            </h3>
+                        </li>
+                    {{/each}}
+                </ol>
+            {{else}}
+                <h1>Loading...</h1>
+            {{/if}}
+        </script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanilla-router@1.2.8/index.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+        <script src="js/main.js" type="module"></script>
     </body>
 </html>

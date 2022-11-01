@@ -176,12 +176,14 @@ public class PlaceNameService implements Runnable {
     private Context getTowns( Context ctx ){
         final String province = ctx.pathParam( "province" );
         final Collection<Town> towns = places.townsIn( province );
+        ctx.header("Access-Control-Allow-Origin","*");
         return ctx.json( towns );
     }
 
     private void checkIfPlaceExists(Context context) {
         final String province = context.pathParam("province");
         final String town = context.pathParam("town");
+        context.header("Access-Control-Allow-Origin","*");
         if (!places.checkIfTownExists(province, town))
             throw new NotFoundResponse();
         context.status(HttpStatus.OK);
