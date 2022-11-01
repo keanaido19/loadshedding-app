@@ -1,15 +1,25 @@
 package wethinkcode.schedule;
 
+import com.google.common.annotations.VisibleForTesting;
+import io.javalin.Javalin;
+import io.javalin.http.Context;
+import io.javalin.http.HttpStatus;
+import wethinkcode.schedule.transfer.DayDO;
+import wethinkcode.schedule.transfer.ScheduleDO;
+import wethinkcode.schedule.transfer.SlotDO;
+
+import java.io.IOException;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 import java.time.LocalTime;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-import com.google.common.annotations.VisibleForTesting;
-import io.javalin.Javalin;
-import wethinkcode.schedule.transfer.DayDO;
-import wethinkcode.schedule.transfer.ScheduleDO;
-import wethinkcode.schedule.transfer.SlotDO;
+import static io.javalin.apibuilder.ApiBuilder.get;
+import static java.net.http.HttpRequest.BodyPublishers.noBody;
 
 /**
  * I provide a REST API providing the current loadshedding schedule for a
@@ -55,7 +65,55 @@ public class ScheduleService
     }
 
     private Javalin initHttpServer(){
-        throw new UnsupportedOperationException( "TODO" );
+        return Javalin.create().routes(() -> {
+            get("/{province}/{place}/{loadsheddingstage}", this::getSchedule);
+            get("/*", ctx -> ctx.status(HttpStatus.BAD_REQUEST));
+        });
+    }
+
+    private boolean checkIfPlaceIsValid(String province, String place) {
+        try {
+            String p1 = province.replace(" ", "%20");
+            String p2 = place.replace(" ", "%20");
+
+            HttpClient client = HttpClient.newHttpClient();
+
+            HttpRequest request = HttpRequest.newBuilder(
+                    URI.create("http://localhost:7000/" + p1 + "/" + p2)
+            ).method("head", noBody()).build();
+
+            var response =
+                    client.send(request, HttpResponse.BodyHandlers.discarding());
+
+            return HttpStatus.OK.getCode() == response.statusCode();
+        } catch (IOException | InterruptedException e) {
+            return List.of("Free State", "Eastern Cape", "Gauteng",
+                    "North West", "Mpumalanga", "Northern Cape", "Limpopo",
+                    "KwaZulu-Natal", "Western Cape").contains(province);
+        }
+    }
+
+    private void getSchedule(Context context) {
+        String province =
+                context.pathParamAsClass("province", String.class).get();
+        String place =
+                context.pathParamAsClass("place", String.class).get();
+        int stage =
+                context.pathParamAsClass("loadsheddingstage", Integer.class)
+                .check(
+                        value -> List.of(0, 1, 2, 3, 4, 5, 6, 7, 8)
+                                .contains(value),
+                        "Invalid Load Shedding stage!"
+                )
+                .get();
+
+        if (!checkIfPlaceIsValid(province, place)) {
+            context.status(HttpStatus.NOT_FOUND);
+            context.json(emptySchedule());
+            return;
+        }
+
+        context.json(mockSchedule());
     }
 
     // There *must* be a better way than this...

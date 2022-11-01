@@ -13,4 +13,6 @@ public interface Places
     Collection<Town> townsIn( String aProvince );
 
     int size();
+
+    boolean checkIfTownExists(String province, String town);
 }

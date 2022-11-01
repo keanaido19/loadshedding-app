@@ -22,7 +22,7 @@ public class PlacesDb implements Places
     @Override
     public Collection<String> provinces(){
         return towns.parallelStream()
-            .map( town -> town.getProvince() )
+            .map(Town::getProvince)
             .collect( Collectors.toSet() );
     }
 
@@ -36,6 +36,11 @@ public class PlacesDb implements Places
     @Override
     public int size(){
         return towns.size();
+    }
+
+    @Override
+    public boolean checkIfTownExists(String province, String town) {
+        return towns.contains(new Town(town, province));
     }
 
 }

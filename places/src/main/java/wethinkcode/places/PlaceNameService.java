@@ -9,6 +9,8 @@ import java.util.Properties;
 import com.google.common.annotations.VisibleForTesting;
 import io.javalin.Javalin;
 import io.javalin.http.Context;
+import io.javalin.http.HttpStatus;
+import io.javalin.http.NotFoundResponse;
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
@@ -128,6 +130,7 @@ public class PlaceNameService implements Runnable {
     @Override
     public void run(){
         server.start( servicePort() );
+        while(true) {}
     }
 
     /**
@@ -166,13 +169,22 @@ public class PlaceNameService implements Runnable {
     private Javalin initHttpServer(){
         return Javalin.create()
             .get( "/provinces", ctx -> ctx.json( places.provinces() ))
-            .get( "/towns/{province}", this::getTowns );
+            .get( "/towns/{province}", this::getTowns )
+            .head("/{province}/{town}", this::checkIfPlaceExists);
     }
 
     private Context getTowns( Context ctx ){
         final String province = ctx.pathParam( "province" );
         final Collection<Town> towns = places.townsIn( province );
         return ctx.json( towns );
+    }
+
+    private void checkIfPlaceExists(Context context) {
+        final String province = context.pathParam("province");
+        final String town = context.pathParam("town");
+        if (!places.checkIfTownExists(province, town))
+            throw new NotFoundResponse();
+        context.status(HttpStatus.OK);
     }
 
     @VisibleForTesting

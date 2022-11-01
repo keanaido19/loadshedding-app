@@ -3,7 +3,7 @@ package wethinkcode.stage;
 import com.google.common.annotations.VisibleForTesting;
 import io.javalin.Javalin;
 import io.javalin.http.BadRequestResponse;
-import io.javalin.http.Handler;
+import io.javalin.http.Context;
 
 import static io.javalin.apibuilder.ApiBuilder.get;
 import static io.javalin.apibuilder.ApiBuilder.post;
@@ -70,17 +70,17 @@ public class StageService
     }
 
     private Javalin initHttpServer(){
-//        throw new UnsupportedOperationException( "TODO" );
         return Javalin.create().routes(() -> {
-            get("/stage", getLoadSheddingStage);
-            post("/stage", postLoadSheddingStage);
+            get("/stage", this::getLoadSheddingStage);
+            post("/stage", this::postLoadSheddingStage);
         });
     }
 
-    private final Handler getLoadSheddingStage = context ->
-            context.json(new StageDO(loadSheddingStage));
+    private void getLoadSheddingStage(Context context) {
+        context.json(new StageDO(loadSheddingStage));
+    }
 
-    private final Handler postLoadSheddingStage = context -> {
+    private void postLoadSheddingStage(Context context) {
         try {
             StageDO stageDO = context.bodyAsClass(StageDO.class);
             if (stageDO.getStage() < 0 || stageDO.getStage() > 8)
@@ -89,5 +89,5 @@ public class StageService
         } catch (Exception e) {
             throw new BadRequestResponse();
         }
-    };
+    }
 }
