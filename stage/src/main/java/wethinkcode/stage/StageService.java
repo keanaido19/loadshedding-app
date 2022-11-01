@@ -2,6 +2,11 @@ package wethinkcode.stage;
 
 import com.google.common.annotations.VisibleForTesting;
 import io.javalin.Javalin;
+import io.javalin.http.BadRequestResponse;
+import io.javalin.http.Handler;
+
+import static io.javalin.apibuilder.ApiBuilder.get;
+import static io.javalin.apibuilder.ApiBuilder.post;
 
 /**
  * I provide a REST API that reports the current loadshedding "stage". I provide
@@ -65,6 +70,24 @@ public class StageService
     }
 
     private Javalin initHttpServer(){
-        throw new UnsupportedOperationException( "TODO" );
+//        throw new UnsupportedOperationException( "TODO" );
+        return Javalin.create().routes(() -> {
+            get("/stage", getLoadSheddingStage);
+            post("/stage", postLoadSheddingStage);
+        });
     }
+
+    private final Handler getLoadSheddingStage = context ->
+            context.json(new StageDO(loadSheddingStage));
+
+    private final Handler postLoadSheddingStage = context -> {
+        try {
+            StageDO stageDO = context.bodyAsClass(StageDO.class);
+            if (stageDO.getStage() < 0 || stageDO.getStage() > 8)
+                throw new IllegalArgumentException();
+            loadSheddingStage = stageDO.getStage();
+        } catch (Exception e) {
+            throw new BadRequestResponse();
+        }
+    };
 }
