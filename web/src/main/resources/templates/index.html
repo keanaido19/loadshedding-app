@@ -4,6 +4,10 @@
         <title>LightInTheShed</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pangolin">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <div id="app">
@@ -17,6 +21,7 @@
         <script id="home-template" type="text/handlebars-template">
             <h1>{{stage}}</h1>
             <br/>
+            <h2>Provinces:</h2>
             <ol style="list-style-type:none">
                 <li><h3><a href="/#towns?province=Eastern Cape">Easten Cape</a></h3></li>
                 <li><h3><a href="/#towns?province=Free State">Free State</a></h3></li>
@@ -49,6 +54,29 @@
             {{/if}}
         </script>
 
+        <script id="schedule-template" type="text/handlebars-template">
+            <h1>{{details}}</h1>
+            <br/>
+            <h2>Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="colgroup">Slots</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each schedules}}
+                        <tr>
+                            <th scope="row">{{this.date}}</th>
+                            {{#each this.slots}}
+                                <td>{{this}}</td>
+                            {{/each}}
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vanilla-router@1.2.8/index.min.js"></script>

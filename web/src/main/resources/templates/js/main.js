@@ -3,8 +3,11 @@ import * as helpers from "./modules/helpers.js";
 async function getLoadSheddingStage() {
     const data =
         await helpers.getApiCall("http://localhost:7001/stage");
+
+    if (null === data) return;
+
     const viewModel = {
-        stage: `Load Shedding Stage ${data.stage}`,
+        stage: `Load Shedding (Stage ${data.stage})`,
     };
     helpers.updatePage("home-template", viewModel);
 }
@@ -25,9 +28,9 @@ async function getTowns() {
 async function getSchedule() {
     const hashLocationList = location.hash.split("?");
 
-    const province =
+    let province =
         hashLocationList[1].substring(hashLocationList[1].lastIndexOf('=') + 1);
-    const town =
+    let town =
         hashLocationList[2].substring(hashLocationList[2].lastIndexOf('=') + 1);
     const stage =
         (await helpers.getApiCall("http://localhost:7001/stage")).stage;
@@ -37,7 +40,16 @@ async function getSchedule() {
             `http://localhost:7002/${province}/${town}/${stage}`
         );
 
-    console.log(data);
+    if (null === data) return;
+
+    province = province.replace("%20", " ");
+    town = town.replace("%20", " ");
+
+    const viewModel = {
+        details: `${town}, ${province} (Stage ${stage})`,
+        schedules: helpers.formatSchedule(data),
+    };
+    helpers.updatePage("schedule-template", viewModel);
 }
 
 window.addEventListener('load', () => {
