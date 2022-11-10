@@ -1,0 +1,186 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/keanaido021/WeThinkCode/Electives/SystemsIntegration/submission-loadshedding-2/ApiTests/LoadShedding/LoadShedding.Specs/LoadShedding.Specs.csproj": {}
+  },
+  "projects": {
+    "/home/keanaido021/WeThinkCode/Electives/SystemsIntegration/submission-loadshedding-2/ApiTests/LoadShedding/LoadShedding.Specs/LoadShedding.Specs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/keanaido021/WeThinkCode/Electives/SystemsIntegration/submission-loadshedding-2/ApiTests/LoadShedding/LoadShedding.Specs/LoadShedding.Specs.csproj",
+        "projectName": "LoadShedding.Specs",
+        "projectPath": "/home/keanaido021/WeThinkCode/Electives/SystemsIntegration/submission-loadshedding-2/ApiTests/LoadShedding/LoadShedding.Specs/LoadShedding.Specs.csproj",
+        "packagesPath": "/home/keanaido021/.nuget/packages/",
+        "outputPath": "/home/keanaido021/WeThinkCode/Electives/SystemsIntegration/submission-loadshedding-2/ApiTests/LoadShedding/LoadShedding.Specs/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/keanaido021/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/keanaido021/WeThinkCode/Electives/SystemsIntegration/submission-loadshedding-2/ApiTests/LoadShedding/LoadShedding/LoadShedding.csproj": {
+                "projectPath": "/home/keanaido021/WeThinkCode/Electives/SystemsIntegration/submission-loadshedding-2/ApiTests/LoadShedding/LoadShedding/LoadShedding.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
+            "SpecFlow.Assist.Dynamic": {
+              "target": "Package",
+              "version": "[1.4.2, )"
+            },
+            "SpecFlow.NUnit": {
+              "target": "Package",
+              "version": "[3.9.22, )"
+            },
+            "SpecFlow.Plus.LivingDocPlugin": {
+              "target": "Package",
+              "version": "[3.9.57, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.403/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/keanaido021/WeThinkCode/Electives/SystemsIntegration/submission-loadshedding-2/ApiTests/LoadShedding/LoadShedding/LoadShedding.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/keanaido021/WeThinkCode/Electives/SystemsIntegration/submission-loadshedding-2/ApiTests/LoadShedding/LoadShedding/LoadShedding.csproj",
+        "projectName": "LoadShedding",
+        "projectPath": "/home/keanaido021/WeThinkCode/Electives/SystemsIntegration/submission-loadshedding-2/ApiTests/LoadShedding/LoadShedding/LoadShedding.csproj",
+        "packagesPath": "/home/keanaido021/.nuget/packages/",
+        "outputPath": "/home/keanaido021/WeThinkCode/Electives/SystemsIntegration/submission-loadshedding-2/ApiTests/LoadShedding/LoadShedding/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/keanaido021/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "JsonSubTypes": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.2.3, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[108.0.2, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.403/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

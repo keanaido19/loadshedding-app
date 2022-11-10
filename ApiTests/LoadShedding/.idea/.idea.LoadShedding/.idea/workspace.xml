@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a99d91e1-ff33-42d6-8a0d-7bb76014e343" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.LoadShedding/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.LoadShedding/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/Drivers/Driver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/Features/PlaceNameService.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/Features/PlaceNameService.feature.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/Features/ScheduleService.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/Features/ScheduleService.feature.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/Features/StageService.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/Features/StageService.feature.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/Hooks/Hook.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/LoadShedding.Specs.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/Steps/PlaceNameServiceStepsDefinition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/Steps/ScheduleServiceStepsDefinition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/Steps/StageServiceStepsDefinition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/BoDi.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/Cucumber.Messages.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/Dynamitey.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/FluentAssertions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/Gherkin.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/Google.Protobuf.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/JsonSubTypes.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/LivingDoc.Dtos.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/LivingDoc.SpecFlowPlugin.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/LoadShedding.Specs.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/LoadShedding.Specs.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/LoadShedding.Specs.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/LoadShedding.Specs.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/LoadShedding.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/LoadShedding.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/LoadShedding.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/LoadShedding.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/Microsoft.DotNet.PlatformAbstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/Microsoft.Extensions.DependencyModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/Microsoft.TestPlatform.CommunicationUtilities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/Microsoft.TestPlatform.CoreUtilities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/Microsoft.TestPlatform.CrossPlatEngine.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/Microsoft.TestPlatform.PlatformAbstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/Microsoft.TestPlatform.Utilities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/Microsoft.VisualStudio.TestPlatform.Common.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/NUnit3.TestAdapter.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/NUnit3.TestAdapter.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/Newtonsoft.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/NuGet.Frameworks.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/Polly.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/RestSharp.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/SpecFlow.Assist.Dynamic.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/SpecFlow.Internal.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/System.Security.Permissions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/TechTalk.SpecFlow.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/TestExecution.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/de/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/es/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/it/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/nunit.engine.api.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/nunit.engine.core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/nunit.engine.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/nunit.framework.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/testcentric.engine.metadata.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/testhost.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/bin/Debug/net6.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/Debug/net6.0/LoadShedding.Specs.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/Debug/net6.0/LoadShedding.Specs.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/Debug/net6.0/LoadShedding.Specs.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/Debug/net6.0/LoadShedding.Specs.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/Debug/net6.0/LoadShedding.Specs.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/Debug/net6.0/LoadShedding.Specs.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/Debug/net6.0/LoadShedding.Specs.csproj.CopyComplete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/Debug/net6.0/LoadShedding.Specs.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/Debug/net6.0/LoadShedding.Specs.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/Debug/net6.0/LoadShedding.Specs.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/Debug/net6.0/LoadShedding.Specs.genruntimeconfig.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/Debug/net6.0/LoadShedding.Specs.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/Debug/net6.0/NUnit.AssemblyHooks.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/Debug/net6.0/ref/LoadShedding.Specs.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/Debug/net6.0/refint/LoadShedding.Specs.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/LoadShedding.Specs.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/LoadShedding.Specs.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/LoadShedding.Specs.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.Specs/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding.sln.DotSettings.user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Api/PlaceNameServiceApi.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Api/ScheduleServiceApi.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Api/StageServiceApi.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Client/ApiClient.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Client/ApiException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Client/ApiResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Client/ClientUtils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Client/Configuration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Client/ExceptionFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Client/GlobalConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Client/HttpMethod.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Client/IApiAccessor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Client/IAsynchronousClient.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Client/IReadableConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Client/ISynchronousClient.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Client/Multimap.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Client/OpenAPIDateConverter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Client/RequestOptions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Client/RetryConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/LoadShedding.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Model/AbstractOpenAPISchema.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Model/DayDO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Model/ErrorObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Model/ErrorResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Model/ScheduleDO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Model/SlotDO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Model/StageDO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Model/Town.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/Usings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/JsonSubTypes.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/LoadShedding.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/LoadShedding.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/LoadShedding.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/LoadShedding.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/Microsoft.TestPlatform.CommunicationUtilities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/Microsoft.TestPlatform.CoreUtilities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/Microsoft.TestPlatform.CrossPlatEngine.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/Microsoft.TestPlatform.PlatformAbstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/Microsoft.TestPlatform.Utilities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/Microsoft.VisualStudio.TestPlatform.Common.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/NUnit3.TestAdapter.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/NUnit3.TestAdapter.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/Newtonsoft.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/NuGet.Frameworks.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/Polly.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/RestSharp.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/de/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/es/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/it/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/nunit.engine.api.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/nunit.engine.core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/nunit.engine.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/nunit.framework.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/testcentric.engine.metadata.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/testhost.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/bin/Debug/net6.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/Debug/net6.0/LoadShedding.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/Debug/net6.0/LoadShedding.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/Debug/net6.0/LoadShedding.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/Debug/net6.0/LoadShedding.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/Debug/net6.0/LoadShedding.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/Debug/net6.0/LoadShedding.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/Debug/net6.0/LoadShedding.csproj.CopyComplete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/Debug/net6.0/LoadShedding.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/Debug/net6.0/LoadShedding.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/Debug/net6.0/LoadShedding.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/Debug/net6.0/LoadShedding.genruntimeconfig.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/Debug/net6.0/LoadShedding.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/Debug/net6.0/ref/LoadShedding.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/Debug/net6.0/refint/LoadShedding.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/LoadShedding.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/LoadShedding.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/LoadShedding.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoadShedding/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LoadShedding/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoadShedding.sln" beforeDir="false" afterPath="$PROJECT_DIR$/LoadShedding.sln" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2724b0af8623a9ee32f32d361ae7affa57e244aa75751e56915cd7bc3bca0/RestRequestExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2bc7668b9382962404f42c212527ae4619f4214bec02cf218da4883e950/StringComparer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3b3de4106f59b722f1ed54828060e2772e7e9780b0318aef5340e8551d89d6/Number.Formatting.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4162ff316048616f11dac581f72faa28b28e8ebe0e72a8c8617352bceec6b5/ParametersCollection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/51d77499b14e9f10ec34e89e774d29725b47e153128025c78ae4b8784b36c/TestExecutionEngine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76a3a8469bbd169723c61a671be2c7b69a5bcff10faec98bba53b51d8a40b3/KeyValuePair.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/79467f2a13c8ce612e413b377333acbb67f3bf4938b86215df6f231d85fa414c/UrlSegmentParameter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7cc477141a9a15fde3b7c58ecd2739d1a38ca92f945ec7c8b78e90193b11c5/TaskContinuation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/829ae6abd2ccc9c77d77d364943d8332621202f9da154521aa222d66a5995/Parameter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/83d54811ce5917e6ddee9cdd1ab32dc6e29462ac9b8be3b8cdb779a3cc6c8c/Ensure.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/86d9944d7dc6247b332d77355bfabdb7cd68928cf33921b80ea70c795ef7c26/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9156f7f7d7fe31ecb86103c74e89e22a5242a153d4ccf14e354685cb3fb7b5/Task.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/97ff884ce3c0b8d07093729bcf815db710327f8e4c233c5282d34b45a118fa9a/Contains.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/99f6f34f188cca6e2f9c5a8f407176ff1d2990b94e7a192aa88845787429d/String.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a7ad30f3ac0723382218092f88f1c9a2d416a1378115bd05c3fd1be8b7/String.Comparison.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a89c43b9e4639a86ef72bfbdd915cf3a88d4582ea46a7bc809f17b1baa77abf/AsyncTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c9e6ebf51a89e6989486513df713e9efcb20f423a98b12ccfab69966d4bf4/Int32.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ca4271bab3e53b61f244a7ba081b39413d465de6262bbffb78775592f4228f5/Reflect.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/caccb9a16b7398be8d7bb6172f25e9c31e7d93eca254e79c3c6ff3ce733da8c/Dictionary.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d4f195b30964b1c412275f388bc2f375abdd9959271d6cb0844ad432892592/String.Searching.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d4f98ebdd878db4fbd98872756eb7be6ad9e468fe5cd6b16385d8c4993109a/List.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d72e0cd50edabffb9e41dae2e54595bdec437e8dc1c3d1fc68e4cfd9e15acb/NonRandomizedStringEqualityComparer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/da7d4ae4b6eb89fbb14bf6f0e94c552261d9d269bec26fd1f483a236b920f7/RestRequest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/fe765148c82eb785877dcf89a4206ad54969b2bd5fff9cc88e3f9a7e2489/Object.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HMIuSlVWh41ifCG3LU5qSwNvZp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Console Font&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="40a6ceec-8b9c-4e1f-8188-7a7cc1073280" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a99d91e1-ff33-42d6-8a0d-7bb76014e343" name="Changes" comment="" />
+      <created>1668088747492</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668088747492</updated>
+      <workItem from="1668088750109" duration="8235000" />
+      <workItem from="1668105655728" duration="3005000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet Exception Breakpoints">
+          <properties exception="LoadSheddingService.Swagger.Client.ApiException" displayValue="ApiException" namespaceName="LoadSheddingService.Swagger.Client" />
+          <option name="timeStamp" value="7" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
