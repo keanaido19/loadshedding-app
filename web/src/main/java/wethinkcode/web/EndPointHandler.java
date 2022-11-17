@@ -41,11 +41,10 @@ public class EndPointHandler {
             }
     )
     public static void getLoadSheddingStage(Context context) {
+        context.header("Access-Control-Allow-Origin","*");
         try {
             HttpResponse<JsonNode> response =
                     Unirest.get(stageServiceUrl + "/stage").asJson();
-
-            context.header("Access-Control-Allow-Origin","*");
             context.status(response.getStatus());
             context.json(response.getBody().toString());
         } catch (UnirestException e) {
@@ -82,6 +81,7 @@ public class EndPointHandler {
             }
     )
     public static void getTowns(Context context) {
+        context.header("Access-Control-Allow-Origin","*");
         final String province = context.pathParam( "province" );
         try {
             HttpResponse<JsonNode> response =
@@ -89,7 +89,6 @@ public class EndPointHandler {
                             placeNameServiceUrl + "/towns/" + province
                     ).asJson();
 
-            context.header("Access-Control-Allow-Origin","*");
             context.status(response.getStatus());
             context.json(response.getBody().toString());
         } catch (UnirestException e) {
@@ -151,6 +150,7 @@ public class EndPointHandler {
         int stage =
                 context.pathParamAsClass("loadsheddingstage", Integer.class)
                         .get();
+        context.header("Access-Control-Allow-Origin","*");
         try {
             HttpResponse<JsonNode> response =
                     Unirest.get(
@@ -160,7 +160,6 @@ public class EndPointHandler {
                                     stage
                     ).asJson();
 
-            context.header("Access-Control-Allow-Origin","*");
             context.status(response.getStatus());
             context.json(response.getBody().toString());
         } catch (UnirestException e) {
