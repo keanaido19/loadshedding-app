@@ -15,7 +15,7 @@ import wethinkcode.stage.StageDO;
 public class EndPointHandler {
     private static final String domain = "http://localhost:";
 
-    private static final String stageServiceUrl = domain + 7001;
+    public static final String stageServiceUrl = domain + 7001;
     private static final String placeNameServiceUrl = domain + 7000;
     private static final String scheduleServiceUrl = domain + 7002;
 
@@ -42,14 +42,10 @@ public class EndPointHandler {
     )
     public static void getLoadSheddingStage(Context context) {
         context.header("Access-Control-Allow-Origin","*");
-        try {
-            HttpResponse<JsonNode> response =
-                    Unirest.get(stageServiceUrl + "/stage").asJson();
-            context.status(response.getStatus());
-            context.json(response.getBody().toString());
-        } catch (UnirestException e) {
+        if (null == WebService.stage){
             throw new ServiceUnavailableResponse();
         }
+        context.json(WebService.stage);
     }
 
     @OpenApi(
@@ -100,7 +96,7 @@ public class EndPointHandler {
             summary = "Get the load shedding schedule for a given load " +
                     "shedding stage in a give town",
             operationId = "getSchedule",
-            path = "/{province}/{place}/{loadsheddingstage}",
+            path = "/{province}/{place}",
             method = HttpMethod.GET,
             pathParams = {
                     @OpenApiParam(
@@ -113,12 +109,6 @@ public class EndPointHandler {
                             description = "The name of the place",
                             required = true
                     ),
-                    @OpenApiParam(
-                            name = "loadsheddingstage",
-                            description = "The load shedding stage number",
-                            required = true,
-                            type = Integer.class
-                    )
             },
             tags = {"Schedule Service"},
             responses = {
@@ -147,17 +137,14 @@ public class EndPointHandler {
                 context.pathParamAsClass("province", String.class).get();
         String place =
                 context.pathParamAsClass("place", String.class).get();
-        int stage =
-                context.pathParamAsClass("loadsheddingstage", Integer.class)
-                        .get();
+
         context.header("Access-Control-Allow-Origin","*");
         try {
             HttpResponse<JsonNode> response =
                     Unirest.get(
                             scheduleServiceUrl + "/" +
                                     province + "/" +
-                                    place + "/" +
-                                    stage
+                                    place
                     ).asJson();
 
             context.status(response.getStatus());

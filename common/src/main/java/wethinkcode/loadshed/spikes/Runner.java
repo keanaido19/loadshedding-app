@@ -22,10 +22,11 @@ public class Runner {
         Thread t;
 
         switch (connectionType) {
-            case PUBLISHER ->
+            case PUBLISHER:
                 t = new Publisher(connectionController);
-
-            case RECEIVER, default ->
+                break;
+            case RECEIVER:
+            default:
                 t = new Receiver(connectionController);
 
         }

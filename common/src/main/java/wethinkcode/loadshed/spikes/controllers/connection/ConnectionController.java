@@ -25,10 +25,11 @@ public class ConnectionController {
                 connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 
         switch (destinationType) {
-            case TOPIC ->
+            case TOPIC:
                 d = session.createTopic(destination);
-
-            case QUEUE, default ->
+                break;
+            case QUEUE:
+            default:
                 d = session.createQueue(destination);
 
         }

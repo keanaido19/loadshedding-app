@@ -4,9 +4,16 @@ import com.google.common.annotations.VisibleForTesting;
 import io.javalin.Javalin;
 import io.javalin.http.BadRequestResponse;
 import io.javalin.http.Context;
+import jakarta.jms.MessageProducer;
+import jakarta.jms.Session;
+import jakarta.jms.TextMessage;
+import wethinkcode.loadshed.spikes.controllers.connection.ConnectionController;
+
+import java.util.concurrent.ConcurrentLinkedQueue;
 
 import static io.javalin.apibuilder.ApiBuilder.get;
 import static io.javalin.apibuilder.ApiBuilder.post;
+import static wethinkcode.loadshed.spikes.enums.DestinationType.TOPIC;
 
 /**
  * I provide a REST API that reports the current loadshedding "stage". I provide
@@ -22,12 +29,16 @@ import static io.javalin.apibuilder.ApiBuilder.post;
  */
 public class StageService
 {
+    private final ConcurrentLinkedQueue<String> stageQueue =
+            new ConcurrentLinkedQueue<>();
+
     public static final int DEFAULT_STAGE = 0; // no loadshedding. Ha!
 
     public static final int DEFAULT_PORT = 7001;
 
     public static void main( String[] args ){
         final StageService svc = new StageService().initialise();
+        new Thread(svc::stageTopicPublisher).start();
         svc.start();
     }
 
@@ -87,8 +98,33 @@ public class StageService
             if (stageDO.getStage() < 0 || stageDO.getStage() > 8)
                 throw new IllegalArgumentException();
             loadSheddingStage = stageDO.getStage();
+            stageQueue.add(context.body());
         } catch (Exception e) {
             throw new BadRequestResponse();
+        }
+    }
+
+    private void stageTopicPublisher() {
+        while (true) {
+            try {
+                ConnectionController connectionController =
+                        new ConnectionController(TOPIC, "stage");
+                connectionController.start();
+
+                Session session = connectionController.getSession();
+
+                MessageProducer producer =
+                        connectionController.getMessageProducer();
+
+                String response;
+                while (true) {
+                    if (stageQueue.isEmpty()) continue;
+
+                    response = stageQueue.poll();
+                    TextMessage msg = session.createTextMessage(response);
+                    producer.send(msg);
+                }
+            } catch (Exception ignored) {}
         }
     }
 }
