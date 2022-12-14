@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>LightInTheShed</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pangolin">
+        <link rel="stylesheet" href="client/css/normalize.css">
+        <link rel="stylesheet" href="client/css/main.css">
+    </head>
+    <body>
+        <div id="app">
+            <h1>Loading...</h1>
+        </div>
+
+        <script id="loading-template" type="text/handlebars-template">
+            <h1>Loading...</h1>
+        </script>
+
+        <script id="home-template" type="text/handlebars-template">
+            <h1>{{stage}}</h1>
+            <br/>
+            <h2>Provinces:</h2>
+            <ol style="list-style-type:none">
+                <li><h3><a href="/#towns?province=Eastern Cape">Easten Cape</a></h3></li>
+                <li><h3><a href="/#towns?province=Free State">Free State</a></h3></li>
+                <li><h3><a href="/#towns?province=Gauteng">Gauteng</a></h3></li>
+                <li><h3><a href="/#towns?province=KwaZulu-Natal">KwaZulu-Natal</a></h3></li>
+                <li><h3><a href="/#towns?province=Limpopo">Limpopo</a></h3></li>
+                <li><h3><a href="/#towns?province=Mpumalanga">Mpumalanga</a></h3></li>
+                <li><h3><a href="/#towns?province=North West">North West</a></h3></li>
+                <li><h3><a href="/#towns?province=Northern Cape">Northern Cape</a></h3></li>
+                <li><h3><a href="/#towns?province=Western Cape">Western Cape</a></h3></li>
+            </ol>
+        </script>
+
+        <script id="towns-template" type="text/handlebars">
+            {{#if towns}}
+                <h1>{{province}}</h1>
+                <br/>
+                <h2>Towns:</h2>
+                <ol style="list-style-type:none">
+                    {{#each towns}}
+                        <li>
+                            <h3>
+                                <a href="/#schedule?province={{province}}?town={{this.name}}">{{this.name}}</a>
+                            </h3>
+                        </li>
+                    {{/each}}
+                </ol>
+            {{else}}
+                <h1>Loading...</h1>
+            {{/if}}
+        </script>
+
+        <script id="schedule-template" type="text/handlebars-template">
+            <h1>{{details}}</h1>
+            <br/>
+            <h2>Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="colgroup">Slots</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each schedules}}
+                        <tr>
+                            <th scope="row">{{this.date}}</th>
+                            {{#each this.slots}}
+                                <td>{{this}}</td>
+                            {{/each}}
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanilla-router@1.2.8/index.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+        <script src="client/js/main.js" type="module"></script>
+    </body>
+</html>
